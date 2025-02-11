@@ -1,0 +1,174 @@
+.bold {
+   font-size: 15px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: cornflowerblue;
+}
+
+      
+        p {
+            text-indent: 20px;
+        }
+        .img {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .img img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: cornflowerblue; 
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
+        .red {
+            color: red;
+            font-weight: bold;
+        }
+        .blue {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .container1 {
+            position: relative;
+            width: 800px;
+            height: 500px;
+            margin: auto;
+            background-image: url('2efce27538bcf0bc653de99833719657.jpg');
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            border: 5px solid #000;
+            border-radius: 10px;
+        }
+        .angel {
+            position: absolute;
+            top: 120px;
+            left: 0px;
+            right: 15%;
+            width: 100px;
+            height: auto;
+            animation: moveHorizontal 2s linear infinite alternate;
+        }
+        .earth {
+            position: absolute;
+            left: 5%;
+            bottom: 0;
+            width: 80px;
+            height: auto;
+            animation: moveVertical 1s linear infinite alternate;
+        }
+        .text {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 28px;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        @keyframes moveHorizontal {
+            from { right: 50px;}
+            to { left: 700px; }
+        }
+        @keyframes moveVertical {
+            from { top: 250px; }
+            to { top: 420px;  }
+        }
+        .text1 {
+            top: 20px;
+            left: 50%;
+            transform: translateY(1000%);
+            color: black;
+            font-weight: bold;
+        }
+        .text2 {
+            top: 20px;
+            left: 50%;
+            transform: translateY(1000%);
+            color: black;
+            font-weight: bold;
+        }
+
+
+        .container3 {
+            position: relative;
+            display: inline-block;
+        }
+        .device {
+            position: absolute;
+            border: 2px solid transparent;
+        }
+        .device:hover::after {
+            content: attr(data-name);
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            white-space: nowrap;
+        }
+        
+        .monitor {
+            top: 30px; left: 830px; width: 170px; height: 50px;
+        }
+        .keyboard {
+            top: 150px; left: 900px; width: 50px; height: 30px;
+        }
+        .system-unit {
+            top: 50px; left: 930px; width: 150px; height: 50px;
+        }
+        .scanner {
+            top: 150px; left: 1000px; width: 100px; height: 100px;
+        }
+        .printer {
+            top: 80px; left: 725px; width: 100px; height: 100px;
+        }
+
+        .collage {
+            position: relative;
+            width: 700px;
+            height: 700px;
+            margin-left: 35%;
+        }
+
+        .image {
+            position: absolute;
+            border: 5px solid white;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+        .im3 {
+            top: 50;
+            left: 100px;
+            width: 200px;
+        }
+        .im2{
+            top: 120px;
+            left: 30px;
+            width: 250px;
+        }
+        .im3 {
+            top: 240px;
+            left: 120px;
+            width: 200px;
+        }
+        .body {
+            
+            height: 100vh;
+        }
